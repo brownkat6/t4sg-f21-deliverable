@@ -89,7 +89,7 @@ const DeleteCaseModal: React.FC<DeleteCaseModalProps> = (props) => {
                   setCategory(event.target.value as number);
                 }}
               >
-                {data.category.map(function(category, index){
+                {data.category.map(function(category: ManagementCategory, index: number){
                     return <MenuItem key={index} value={category.id}>
                     {category.name}
                   </MenuItem>;
